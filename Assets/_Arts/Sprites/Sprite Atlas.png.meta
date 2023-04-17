@@ -1,0 +1,1153 @@
+fileFormatVersion: 2
+guid: 8ae8179560bc7894d8460b0590cd4a3b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Card Back Face
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 639
+        width: 172
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8b59e76c11e9f419d5f267b9fa3a15
+      internalID: 920042957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hearth Background
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 639
+        width: 172
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07bcf4a46cba5994f950fc41c7571829
+      internalID: -163373295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Background
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 639
+        width: 172
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7332ae605edead34090536ef360d0d39
+      internalID: 95252205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Background
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 639
+        width: 172
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45e103b30f763b459809ee0b60ba803
+      internalID: -1289324417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Background
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 640
+        width: 172
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133b419fb6b7bcf478fd124ed4fe7c76
+      internalID: 1000054664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restart Background
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 640
+        width: 172
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 076a196ed28cb094d8360e86252e4c2c
+      internalID: 480922934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hearth Icon
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 487
+        width: 130
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 024bdf02a63d7ba43bad95e586866f31
+      internalID: -562084139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Icon
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 487
+        width: 131
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29392e70a6eca747a8adde713fed301
+      internalID: 189715109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Icon
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 487
+        width: 128
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1e65a2b4a109349867baca36706480
+      internalID: 220122392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Icon
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 487
+        width: 126
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e121af60696a28a428ac3767eadfa43f
+      internalID: 1018928772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red King Icon
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 227
+        width: 141
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228a1f3ca41bf3946b63e0935b5d670c
+      internalID: -527684741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red Queen Icon
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 227
+        width: 163
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a9da81032efef43b36cb9dbe0c27f0
+      internalID: -1132728536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red Joker Icon
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 227
+        width: 145
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c7a834f265bc645bec99985d91a8db
+      internalID: -567781884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black King Icon
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 227
+        width: 143
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dec908155e423a449bc54063701641a
+      internalID: 293135175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black Queen Icon
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 227
+        width: 163
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a303b9843821049863a316f0e5cb6c
+      internalID: -1942696518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black Joker Icon
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 227
+        width: 145
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 345ae9f3ad3db6b4189c37dac2461388
+      internalID: -2071499500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red A
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 68
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78e11ecbe1e7ee4a9fe8c3957ba3ca0
+      internalID: 1670964047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red 2
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 68
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189805f42ec6fc5449e8f2b3fb76bf31
+      internalID: -687536652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red 3
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 68
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10207c0e8c63e4f4ab0c21ddfc9f5639
+      internalID: -1375044560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red 4
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 68
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d83ec22d3e4e0664a8c2cde05c616e63
+      internalID: 729715821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red 5
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 68
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a79603cb090d99c459e03ee227ea1591
+      internalID: -1396604911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red 6
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 68
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c71c6f07462e864aaaf0104c3cce3e7
+      internalID: -1214331637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red 7
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 68
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53ee7c067a5d9d49a7c697e85d94291
+      internalID: 1367589232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red 8
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 68
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325cc37c37a773c4daaa6b6b2c366dc5
+      internalID: 506750775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red 9
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 68
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eec91e0b3e76c346960fce622c13aa2
+      internalID: 759179731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red 10
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 68
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2b7af2608cdbe448137d9cb68ea354
+      internalID: -1744549415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red J
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 68
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa99cd07325b93d4cbada5d4cefe8d83
+      internalID: 1634035488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red Q
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 68
+        width: 46
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca55ebfa00033545b324f6b0745076d
+      internalID: 1342834306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red K
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 68
+        width: 41
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5714ba8fda9ae4f9645ad5cd03bc2e
+      internalID: -1024867674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black A
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 5
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1512cf146ebb2c45b35658a8a0312a2
+      internalID: -251209049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black 2
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 5
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42bf38ca77eee8742b29b1a821b1c0c9
+      internalID: -1286031261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black 3
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 5
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2604039b084c370439503510f2cd9381
+      internalID: -479450494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black 4
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 5
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9162df9a0e066c942933f792652940ee
+      internalID: -1242473343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black 5
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 5
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 036c6cd425115404d8ca4f0401d78f19
+      internalID: 1614195547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black 6
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 5
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7292cb4dda3bb894395d6a71dcf827a6
+      internalID: 1906329764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black 7
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 5
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f5e4dba4ce9fb4e98662c4809182fc
+      internalID: 202594655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black 8
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 5
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1713ca93a4ae94c4ea1f54820a08f08b
+      internalID: 1929413825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black 9
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 5
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ad8d23aa883dcd418eae6a51fc9ab56
+      internalID: -2061719190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black 10
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 5
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d8c3f0d6c813f4a8e718d72dbcc121
+      internalID: 1339380324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black J
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 5
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 783054061dc3e2b4cb5e4404ce7b361c
+      internalID: 2074951242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black Q
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 5
+        width: 46
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd6bcf222bfa834e936c714d5704ad8
+      internalID: -1911848857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black K
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 5
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c440b07fb3ff741b92edc8e0a43128
+      internalID: 313953011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Browser Games - Google Solitaire - Cards_63: -1686474354
+      Browser Games - Google Solitaire - Cards_78: -19182956
+      Browser Games - Google Solitaire - Cards_106: 1837007287
+      Browser Games - Google Solitaire - Cards_144: -1417056173
+      Diamond Background: 95252205
+      Red 4: 729715821
+      Browser Games - Google Solitaire - Cards_73: -1720516631
+      Browser Games - Google Solitaire - Cards_102: 272994069
+      Browser Games - Google Solitaire - Cards_23: 2079087700
+      Red 8: 506750775
+      Red 2: -687536652
+      Browser Games - Google Solitaire - Cards_20: -230710829
+      Browser Games - Google Solitaire - Cards_26: -744219007
+      Red 3: -1375044560
+      Browser Games - Google Solitaire - Cards_21: 1718849632
+      Browser Games - Google Solitaire - Cards_45: -1066997404
+      Browser Games - Google Solitaire - Cards_118: 2035379856
+      Black 8: 1929413825
+      Red J: 1634035488
+      Browser Games - Google Solitaire - Cards_70: 1279839245
+      Browser Games - Google Solitaire - Cards_30: 1507279394
+      Browser Games - Google Solitaire - Cards_34: -1059935251
+      Browser Games - Google Solitaire - Cards_80: 1655010085
+      Browser Games - Google Solitaire - Cards_98: -60040203
+      Browser Games - Google Solitaire - Cards_74: -1746620209
+      Black 5: 1614195547
+      Browser Games - Google Solitaire - Cards_19: 1604897911
+      Black A: -251209049
+      Red 10: -1744549415
+      Browser Games - Google Solitaire - Cards_59: 1803045027
+      Browser Games - Google Solitaire - Cards_29: -1001425042
+      Browser Games - Google Solitaire - Cards_36: -1886701649
+      Hearth Icon: -562084139
+      Browser Games - Google Solitaire - Cards_14: -848978992
+      Browser Games - Google Solitaire - Cards_13: -30274712
+      Browser Games - Google Solitaire - Cards_88: 1931473488
+      Black 9: -2061719190
+      Restart Background: 480922934
+      Browser Games - Google Solitaire - Cards_109: 198835744
+      Browser Games - Google Solitaire - Cards_99: 352875647
+      Browser Games - Google Solitaire - Cards_90: -1920917770
+      Browser Games - Google Solitaire - Cards_119: 435193911
+      Browser Games - Google Solitaire - Cards_54: -389446242
+      Browser Games - Google Solitaire - Cards_79: 2066303996
+      Red Q: 1342834306
+      Browser Games - Google Solitaire - Cards_101: 218529992
+      Browser Games - Google Solitaire - Cards_15: -137986261
+      Browser Games - Google Solitaire - Cards_25: -2088166148
+      Club Icon: 220122392
+      Browser Games - Google Solitaire - Cards_96: 179615342
+      Black Joker Icon: -2071499500
+      Hearth Background: -163373295
+      Browser Games - Google Solitaire - Cards_95: 1610002726
+      Black 10: 1339380324
+      Browser Games - Google Solitaire - Cards_110: 148300230
+      Browser Games - Google Solitaire - Cards_50: -296897144
+      Browser Games - Google Solitaire - Cards_35: -1966838796
+      Browser Games - Google Solitaire - Cards_53: 1036953773
+      Browser Games - Google Solitaire - Cards_11: 1804288825
+      Browser Games - Google Solitaire - Cards_48: -1859372206
+      Browser Games - Google Solitaire - Cards_68: 1197959342
+      Red Queen Icon: -1132728536
+      Browser Games - Google Solitaire - Cards_27: 2138023329
+      Browser Games - Google Solitaire - Cards_62: -1309377810
+      Browser Games - Google Solitaire - Cards_22: 660674036
+      Browser Games - Google Solitaire - Cards_76: 418583406
+      Black 4: -1242473343
+      Red Joker Icon: -567781884
+      Browser Games - Google Solitaire - Cards_71: -285594793
+      Browser Games - Google Solitaire - Cards_111: -902314392
+      Browser Games - Google Solitaire - Cards_89: -509345642
+      Browser Games - Google Solitaire - Cards_60: -100585427
+      Red K: -1024867674
+      Browser Games - Google Solitaire - Cards_87: 2056687260
+      Browser Games - Google Solitaire - Cards_82: -44912507
+      Browser Games - Google Solitaire - Cards_93: 2096678331
+      Browser Games - Google Solitaire - Cards_94: -1682750475
+      Red 7: 1367589232
+      Browser Games - Google Solitaire - Cards_17: 404531189
+      Browser Games - Google Solitaire - Cards_66: 17685501
+      Spade Background: 1000054664
+      Browser Games - Google Solitaire - Cards_42: -923714026
+      Browser Games - Google Solitaire - Cards_148: 1790192305
+      Browser Games - Google Solitaire - Cards_43: -149158989
+      Browser Games - Google Solitaire - Cards_51: -1194830968
+      Browser Games - Google Solitaire - Cards_31: 1976739008
+      Browser Games - Google Solitaire - Cards_37: 1778998301
+      Browser Games - Google Solitaire - Cards_77: 1725739119
+      Browser Games - Google Solitaire - Cards_46: -362450179
+      Browser Games - Google Solitaire - Cards_56: 1999896423
+      Browser Games - Google Solitaire - Cards_107: 1152382871
+      Browser Games - Google Solitaire - Cards_108: 633710377
+      Browser Games - Google Solitaire - Cards_130: 387058489
+      Spade Icon: 1018928772
+      Red 9: 759179731
+      Red 5: -1396604911
+      Browser Games - Google Solitaire - Cards_28: -20627850
+      Browser Games - Google Solitaire - Cards_85: -1151449905
+      Browser Games - Google Solitaire - Cards_58: 1451504730
+      Browser Games - Google Solitaire - Cards_33: 144980876
+      Browser Games - Google Solitaire - Cards_92: -1952665885
+      Browser Games - Google Solitaire - Cards_105: -1479887881
+      Black Q: -1911848857
+      Browser Games - Google Solitaire - Cards_97: 59701798
+      Browser Games - Google Solitaire - Cards_10: 1349288884
+      Browser Games - Google Solitaire - Cards_47: -577688486
+      Browser Games - Google Solitaire - Cards_52: 1055456990
+      Browser Games - Google Solitaire - Cards_75: -88715381
+      Browser Games - Google Solitaire - Cards_65: 369382427
+      Black Queen Icon: -1942696518
+      Browser Games - Google Solitaire - Cards_44: 1096565277
+      Black 7: 202594655
+      Browser Games - Google Solitaire - Cards_104: 2023929713
+      Browser Games - Google Solitaire - Cards_16: 244638701
+      Browser Games - Google Solitaire - Cards_40: -1744963587
+      Browser Games - Google Solitaire - Cards_69: 1534053069
+      Diamond Icon: 189715109
+      Browser Games - Google Solitaire - Cards_83: 772372621
+      Browser Games - Google Solitaire - Cards_55: 1329987071
+      Red King Icon: -527684741
+      Club Background: -1289324417
+      Browser Games - Google Solitaire - Cards_32: 1570925659
+      Black King Icon: 293135175
+      Black 2: -1286031261
+      Black 3: -479450494
+      Red A: 1670964047
+      Black J: 2074951242
+      Browser Games - Google Solitaire - Cards_38: 948952821
+      Browser Games - Google Solitaire - Cards_41: -1610279421
+      Red 6: -1214331637
+      Browser Games - Google Solitaire - Cards_103: 959859651
+      Black 6: 1906329764
+      Browser Games - Google Solitaire - Cards_18: 1463678116
+      Browser Games - Google Solitaire - Cards_81: -119259285
+      Browser Games - Google Solitaire - Cards_67: -303896012
+      Card Back Face: 920042957
+      Black K: 313953011
+      Browser Games - Google Solitaire - Cards_91: -1101678476
+      Browser Games - Google Solitaire - Cards_12: -2141743825
+      Browser Games - Google Solitaire - Cards_57: -1847391521
+      Browser Games - Google Solitaire - Cards_64: -1375094475
+      Browser Games - Google Solitaire - Cards_100: -955565564
+      Browser Games - Google Solitaire - Cards_72: 1181324129
+      Browser Games - Google Solitaire - Cards_39: -1215742666
+      Browser Games - Google Solitaire - Cards_49: -881721622
+      Browser Games - Google Solitaire - Cards_86: -1660295548
+      Browser Games - Google Solitaire - Cards_24: -418011411
+      Browser Games - Google Solitaire - Cards_61: -1056612389
+      Browser Games - Google Solitaire - Cards_84: -499684129
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
