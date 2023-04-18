@@ -9,12 +9,14 @@ namespace _Scripts
         public Sprite numberSprite;
         public SpriteRenderer iconSpriteRenderer;
         public SpriteRenderer numberSpriteRenderer;
+        public SpriteRenderer smallIconSpriteRenderer;
 
 
         public void UpdateVisual()
         {
             iconSpriteRenderer.sprite = iconSprite;
             numberSpriteRenderer.sprite = numberSprite;
+            smallIconSpriteRenderer.sprite = iconSprite;
         }
     }
 }
