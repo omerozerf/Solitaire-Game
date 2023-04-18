@@ -100,7 +100,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7251915100888625676
 Transform:
   m_ObjectHideFlags: 0
@@ -352,7 +352,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2619226374252743834
 Transform:
   m_ObjectHideFlags: 0
@@ -556,6 +556,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardDisplay: {fileID: 2196549182848548126}
+  FrontFace: {fileID: 5472145332138366098}
+  BackFace: {fileID: 2153284701117378549}
 --- !u!114 &2196549182848548126
 MonoBehaviour:
   m_ObjectHideFlags: 0
