@@ -1,17 +1,20 @@
 ﻿using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace _Scripts
 {
     public class CardDisplay : MonoBehaviour
     {
-        public Sprite front;
-        public Sprite back;
-        public SpriteRenderer spriteRenderer;
+        public Sprite iconSprite;
+        public Sprite numberSprite;
+        public SpriteRenderer iconSpriteRenderer;
+        public SpriteRenderer numberSpriteRenderer;
 
 
         public void UpdateVisual()
         {
-            spriteRenderer.sprite = front;
+            iconSpriteRenderer.sprite = iconSprite;
+            numberSpriteRenderer.sprite = numberSprite;
         }
     }
 }

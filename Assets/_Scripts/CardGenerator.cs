@@ -9,32 +9,39 @@ namespace _Scripts
         [SerializeField] private Sprite[] numberArray;
         [SerializeField] private Sprite[] iconSpriteArray;
         [SerializeField] private Card cardPrefab;
-
+        [SerializeField] private Transform deckTransform;
+        
         
         private const int CARD_TYPE_MAX_SIZE = 13;
         
         
-        [ContextMenu(nameof(Create))]
-        private void Create()
+        [ContextMenu(nameof(CreateCard))]
+        private void CreateCard()
         {
-            CardType currentType = CardType.Hearts;
-            
-            for (int i = 0; i < iconSpriteArray.Length; i++)
+            CardType currentType = CardType.Clubs;
+            int currentTypeInt = 0;
+            int numberSpriteInt = 0;
+
+            int deckSize = 52;
+            for (int j = 0; j < deckSize ; j++)
             {
-                for (int j = 0; j < numberArray.Length; j++)
-                {
-                    int number = j % CARD_TYPE_MAX_SIZE;
-                    number++;
+                int number = j % CARD_TYPE_MAX_SIZE;
+                number++;
 
-                    if (number == 1 && j != 0) currentType++;
+                if (number == 1 && j != 0) currentType++;
+                if (number == 1 && j != 0) currentTypeInt++;
 
-                    Card card = Instantiate(cardPrefab);
-                    card.cardData = new CardData(number, currentType);
-                }
-            }    
-            
-            
-            
+                Card card = Instantiate(cardPrefab, deckTransform);
+                card.cardData = new CardData(number - 1, currentType);
+
+                card.cardDisplay.numberSprite = numberArray[numberSpriteInt % 26];
+                card.cardDisplay.iconSprite = iconSpriteArray[currentTypeInt];
+                card.cardDisplay.UpdateVisual();
+
+                card.name = $"Card {currentType} {number} ";
+                
+                numberSpriteInt++;
+            }
         }
     }
 }
