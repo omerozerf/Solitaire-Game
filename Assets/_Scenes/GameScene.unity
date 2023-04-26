@@ -337,7 +337,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card Slot (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3167078781350572025, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
 --- !u!4 &142723049 stripped
 Transform:
@@ -472,7 +473,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Card Slot
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3167078781350572025, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
 --- !u!4 &397255220 stripped
 Transform:
@@ -1012,7 +1014,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card Slot (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3167078781350572025, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
 --- !u!4 &1251034943 stripped
 Transform:
@@ -1085,7 +1088,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card Slot (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3167078781350572025, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
 --- !u!4 &1286170372 stripped
 Transform:
@@ -1158,7 +1162,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card Slot (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3167078781350572025, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
 --- !u!4 &1420301657 stripped
 Transform:
@@ -1293,7 +1298,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card Slot (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3167078781350572025, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
 --- !u!4 &1488959772 stripped
 Transform:
@@ -1397,7 +1403,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card Slot (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3167078781350572025, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
 --- !u!4 &1696250822 stripped
 Transform:
@@ -1470,7 +1477,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card Slot (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3167078781350572025, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
 --- !u!4 &1758192987 stripped
 Transform:
