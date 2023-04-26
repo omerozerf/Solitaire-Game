@@ -10,9 +10,10 @@ namespace _Scripts
         private void OnValidate()
         {
             transform.localScale = size;
+            
 
 
-            Debug.Log("On Validate!");
+            // Debug.Log("On Validate!");
         }
     }
 }

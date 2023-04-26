@@ -5,8 +5,19 @@ namespace _Scripts
 {
     public class TouchManager : MonoBehaviour
     {
+        // [SerializeField] private StickyObject stickyObject;
+        private StickyObject stickyObject;
+
+
+        private void Awake()
+        {
+            stickyObject = GetComponentInChildren<StickyObject>();
+        }
+
+
         private void OnMouseUp()
         {
+            stickyObject.GetClosestStickyObject();
             Debug.Log("On Mouse Up!");
         }
 
