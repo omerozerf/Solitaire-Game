@@ -84,6 +84,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2017359351223142711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1228487820379098682}
+  - component: {fileID: 1682389151045675405}
+  m_Layer: 0
+  m_Name: Sticky Object
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1228487820379098682
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017359351223142711}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4767261037778469550}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1682389151045675405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017359351223142711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91fb118e6a484909964f08879134fb39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveToPosition: {fileID: 717831429702725269}
 --- !u!1 &2153284701117378549
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,7 +567,6 @@ GameObject:
   - component: {fileID: 2196549182848548126}
   - component: {fileID: 4072794960278220210}
   - component: {fileID: 717831429702725269}
-  - component: {fileID: 8627149372444356336}
   m_Layer: 0
   m_Name: Card
   m_TagString: Untagged
@@ -544,6 +588,7 @@ Transform:
   m_Children:
   - {fileID: 7251915100888625676}
   - {fileID: 2619226374252743834}
+  - {fileID: 1228487820379098682}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -630,16 +675,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 100
---- !u!114 &8627149372444356336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8977632961857451421}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91fb118e6a484909964f08879134fb39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveToPosition: {fileID: 717831429702725269}

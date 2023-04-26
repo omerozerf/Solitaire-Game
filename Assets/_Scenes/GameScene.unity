@@ -338,7 +338,7 @@ PrefabInstance:
       value: Card Slot (7)
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 3167078781350572025, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
 --- !u!4 &142723049 stripped
 Transform:
@@ -350,12 +350,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 30655296746094869, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
   m_PrefabInstance: {fileID: 142723048}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 517235347}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66aed5961be840da8061b30665ccc1e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &161440081 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1017109186899889656, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
+  m_PrefabInstance: {fileID: 1286170371}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &363392803
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,6 +423,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &383164822 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1017109186899889656, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
+  m_PrefabInstance: {fileID: 1420301656}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &397255219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -473,8 +483,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Card Slot
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3167078781350572025, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
 --- !u!4 &397255220 stripped
 Transform:
@@ -523,6 +532,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &517235347 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1017109186899889656, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
+  m_PrefabInstance: {fileID: 142723048}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &517235348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517235347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07478e98e1e642148d60ea197ea03f42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,6 +695,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &723001533 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1017109186899889656, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
+  m_PrefabInstance: {fileID: 1696250821}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &745627744
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,6 +959,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1167762918 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1017109186899889656, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
+  m_PrefabInstance: {fileID: 1758192986}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1202507093
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,7 +1051,7 @@ PrefabInstance:
       value: Card Slot (4)
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 3167078781350572025, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
 --- !u!4 &1251034943 stripped
 Transform:
@@ -1027,7 +1063,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 30655296746094869, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
   m_PrefabInstance: {fileID: 1251034942}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1300099897}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66aed5961be840da8061b30665ccc1e5, type: 3}
@@ -1089,7 +1125,7 @@ PrefabInstance:
       value: Card Slot (3)
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 3167078781350572025, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
 --- !u!4 &1286170372 stripped
 Transform:
@@ -1101,10 +1137,39 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 30655296746094869, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
   m_PrefabInstance: {fileID: 1286170371}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 161440081}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66aed5961be840da8061b30665ccc1e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1286170374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161440081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07478e98e1e642148d60ea197ea03f42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1300099897 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1017109186899889656, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
+  m_PrefabInstance: {fileID: 1251034942}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1300099898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300099897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07478e98e1e642148d60ea197ea03f42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1420301656
@@ -1163,7 +1228,7 @@ PrefabInstance:
       value: Card Slot (6)
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 3167078781350572025, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
 --- !u!4 &1420301657 stripped
 Transform:
@@ -1175,10 +1240,22 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 30655296746094869, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
   m_PrefabInstance: {fileID: 1420301656}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 383164822}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66aed5961be840da8061b30665ccc1e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1420301659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383164822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07478e98e1e642148d60ea197ea03f42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1454116043
@@ -1299,7 +1376,7 @@ PrefabInstance:
       value: Card Slot (2)
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 3167078781350572025, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
 --- !u!4 &1488959772 stripped
 Transform:
@@ -1311,7 +1388,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 30655296746094869, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
   m_PrefabInstance: {fileID: 1488959771}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1786001102}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66aed5961be840da8061b30665ccc1e5, type: 3}
@@ -1404,7 +1481,7 @@ PrefabInstance:
       value: Card Slot (5)
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 3167078781350572025, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
 --- !u!4 &1696250822 stripped
 Transform:
@@ -1416,10 +1493,22 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 30655296746094869, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
   m_PrefabInstance: {fileID: 1696250821}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 723001533}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66aed5961be840da8061b30665ccc1e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1696250824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723001533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07478e98e1e642148d60ea197ea03f42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1758192986
@@ -1478,7 +1567,7 @@ PrefabInstance:
       value: Card Slot (1)
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 3167078781350572025, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
 --- !u!4 &1758192987 stripped
 Transform:
@@ -1490,10 +1579,39 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 30655296746094869, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
   m_PrefabInstance: {fileID: 1758192986}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1167762918}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66aed5961be840da8061b30665ccc1e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1758192989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167762918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07478e98e1e642148d60ea197ea03f42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1786001102 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1017109186899889656, guid: a8b171aa72ad18c42843f0cd7f29b746, type: 3}
+  m_PrefabInstance: {fileID: 1488959771}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1786001103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786001102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07478e98e1e642148d60ea197ea03f42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1790349660

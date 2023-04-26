@@ -18,9 +18,7 @@ namespace _Scripts
 
         private void OnMouseUp()
         {
-            stickyObject.GetClosestStickyObject();
             stickyObject.MoveToClosestStickyObject();
-            Debug.Log("On Mouse Up!");
         }
 
 
