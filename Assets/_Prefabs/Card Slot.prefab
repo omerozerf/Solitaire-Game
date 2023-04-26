@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 891805862802371054}
   - component: {fileID: 3167078781350572025}
+  - component: {fileID: 30655296746094869}
   m_Layer: 0
   m_Name: Card Slot
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 1017109186899889656}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6271495664630295882}
@@ -48,6 +49,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91fb118e6a484909964f08879134fb39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &30655296746094869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017109186899889656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66aed5961be840da8061b30665ccc1e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size: {x: 1, y: 1}
 --- !u!1 &6271495663784999100
 GameObject:
   m_ObjectHideFlags: 0
