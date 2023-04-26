@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Serialization;
 
 namespace _Scripts
@@ -13,9 +14,14 @@ namespace _Scripts
         
         
         private const int CARD_TYPE_MAX_SIZE = 13;
-        
-        
-        [ContextMenu(nameof(CreateCard))]
+
+
+        private void Awake()
+        {
+            CreateCard();
+        }
+
+
         private void CreateCard()
         {
             CardType currentType = CardType.Clubs;

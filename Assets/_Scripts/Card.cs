@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace _Scripts
 {
@@ -10,7 +12,6 @@ namespace _Scripts
 
         [SerializeField] private GameObject FrontFace;
         [SerializeField] private GameObject BackFace;
-        
 
 
         public void ShowFrontFace()

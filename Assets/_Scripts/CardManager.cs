@@ -1,17 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace _Scripts
 {
     public class CardManager : MonoBehaviour
     {
-        public List<Card> cardList;
+        private Card[] cards;
 
 
         private void Start()
         {
-            foreach (var card in cardList)
+            cards = FindObjectsOfType<Card>();
+            
+            foreach (var card in cards)
             {
                 card.HideFrontFace();
             }
@@ -20,7 +23,12 @@ namespace _Scripts
 
         public Card GetCard(CardData cardData)
         {
-            return cardList.Find(x => x.cardData == cardData);
+            foreach (var card in cards)
+            {
+                if (card.cardData == cardData) return card;
+            }
+
+            return default;
         }
     }
 }

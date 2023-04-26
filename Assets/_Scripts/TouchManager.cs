@@ -5,12 +5,13 @@ namespace _Scripts
 {
     public class TouchManager : MonoBehaviour
     {
-        // [SerializeField] private StickyObject stickyObject;
+        private MoveToPosition moveToPosition;
         private StickyObject stickyObject;
 
 
         private void Awake()
         {
+            moveToPosition = GetComponent<MoveToPosition>();
             stickyObject = GetComponentInChildren<StickyObject>();
         }
 
@@ -18,6 +19,7 @@ namespace _Scripts
         private void OnMouseUp()
         {
             stickyObject.GetClosestStickyObject();
+            stickyObject.MoveToClosestStickyObject();
             Debug.Log("On Mouse Up!");
         }
 
@@ -26,7 +28,7 @@ namespace _Scripts
         { 
             Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10); 
             Vector3 objPosition = Camera.main.ScreenToWorldPoint(mousePosition); 
-            gameObject.transform.position = objPosition;
+            moveToPosition.SetTargetPos(objPosition);
         }
     }
 }
