@@ -7,23 +7,32 @@ namespace _Scripts
 {
     public class CardManager : MonoBehaviour
     {
-        private Card[] cards;
+        public static CardManager Instance { get; private set; }
+        
+        
+        public List<Card> cardList;
+
+
+        private void Awake()
+        {
+            Instance = this;
+        }
 
 
         private void Start()
         {
-            cards = FindObjectsOfType<Card>();
+            cardList = new List<Card>(FindObjectsOfType<Card>());
             
-            foreach (var card in cards)
+            foreach (var card in cardList)
             {
-                card.HideFrontFace();
+                card.ShowFrontFace();
             }
         }
 
 
         public Card GetCard(CardData cardData)
         {
-            foreach (var card in cards)
+            foreach (var card in cardList)
             {
                 if (card.cardData == cardData) return card;
             }

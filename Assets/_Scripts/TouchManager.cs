@@ -25,7 +25,7 @@ namespace _Scripts
         private void OnMouseDrag()
         { 
             Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10); 
-            Vector3 objPosition = Camera.main.ScreenToWorldPoint(mousePosition); 
+            Vector3 objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
             moveToPosition.SetTargetPos(objPosition);
         }
     }

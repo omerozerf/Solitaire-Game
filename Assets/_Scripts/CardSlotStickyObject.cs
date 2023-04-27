@@ -1,16 +1,22 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace _Scripts
 {
     public class CardSlotStickyObject : MonoBehaviour
     {
-        public static CardSlotStickyObject[] cardSlotStickyObjectArray;
-
+        public static List<CardSlotStickyObject> cardSlotStickyObjectList;
+        
+        
+        [SerializeField] private bool canSnapToCardSlot = true;
+        [SerializeField] private bool canSnapToCard;
+        
 
         private void Start()
         {
-            if (cardSlotStickyObjectArray == null) cardSlotStickyObjectArray = FindObjectsOfType<CardSlotStickyObject>();
+            if (cardSlotStickyObjectList == null) 
+                cardSlotStickyObjectList = new List<CardSlotStickyObject>(FindObjectsOfType<CardSlotStickyObject>());
         }
     }
 }
