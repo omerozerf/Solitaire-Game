@@ -1,10 +1,14 @@
 ﻿using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace _Scripts
 {
     public class TouchManager : MonoBehaviour
     {
+        public static event EventHandler<Card> OnUpMouse;
+        
+        
         private MoveToPosition moveToPosition;
         private StickyObject stickyObject;
         public Card card;
@@ -21,6 +25,7 @@ namespace _Scripts
         private void OnMouseUp()
         {
             stickyObject.MoveToClosestStickyObject();
+            OnUpMouse?.Invoke(this, card);
         }
 
 

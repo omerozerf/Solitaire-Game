@@ -6,16 +6,29 @@ namespace _Scripts
 {
     public class CardSlot : MonoBehaviour
     {
+        public List<Card> cardList;
+        
+
         [SerializeField] private Vector2 size = Vector2.one;
 
 
-        public List<Card> cardList;
+        private Card card;
+        
 
-
-        private void OnValidate()
+        private void Start()
         {
-            transform.localScale = size;
-            // Debug.Log("On Validate!");
+            TouchManager.OnUpMouse += TouchManagerOnUpMouse;
+        }
+
+        private void TouchManagerOnUpMouse(object sender, Card card)
+        {
+            this.card = card;
+        }
+
+
+        private void AddCardToList(Card card, List<CardSlot> addToCardSlotList, List<CardSlot> removeToCardSlotList)
+        {
+            // card listlerine tutan listlere ulaşıyorsun sadece cardların listesine ulaş
         }
     }
 }
