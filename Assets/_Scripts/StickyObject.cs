@@ -41,11 +41,5 @@ namespace _Scripts
                 }
             }
         }
-
-
-        public void ChangeList(Card card, List<CardSlot> removeList, List<CardSlot> addList)
-        {
-            removeList.Remove(card);
-        }
     }
 }
