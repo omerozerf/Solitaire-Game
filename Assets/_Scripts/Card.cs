@@ -14,6 +14,21 @@ namespace _Scripts
         [SerializeField] private GameObject BackFace;
 
 
+        private CardSlot cardSlot;
+
+
+        public CardSlot GetCardSlot()
+        {
+            return cardSlot;
+        }
+
+
+        public void SetCardSlot(CardSlot cardSlot)
+        {
+            this.cardSlot = cardSlot;
+        }
+        
+        
         public void ShowFrontFace()
         {
             FrontFace.SetActive(true);

@@ -41,5 +41,25 @@ namespace _Scripts
                 }
             }
         }
+
+
+        public CardSlotStickyObject GetClosestStickyObject()
+        {
+            var currentDistance = float.PositiveInfinity;
+            CardSlotStickyObject currentCardSlotStickyObject = null;
+            foreach (var cardSlotStickyObject in CardSlotStickyObject.cardSlotStickyObjectList)
+            {
+                var distance = (transform.position - cardSlotStickyObject.transform.position).magnitude;
+
+                if (distance < currentDistance)
+                {
+                    currentDistance = distance;
+
+                    currentCardSlotStickyObject = cardSlotStickyObject;
+                }
+            }
+
+            return currentCardSlotStickyObject;
+        }
     }
 }

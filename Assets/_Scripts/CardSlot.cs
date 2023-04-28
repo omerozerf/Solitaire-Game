@@ -10,9 +10,6 @@ namespace _Scripts
         
 
         [SerializeField] private Vector2 size = Vector2.one;
-
-
-        private Card card;
         
 
         private void Start()
@@ -20,15 +17,42 @@ namespace _Scripts
             TouchManager.OnUpMouse += TouchManagerOnUpMouse;
         }
 
-        private void TouchManagerOnUpMouse(object sender, Card card)
+        private void TouchManagerOnUpMouse(object sender, (Card, CardSlotStickyObject) valueTuple)
         {
-            this.card = card;
+            CardSlot cardSlot = valueTuple.Item2.GetComponent<CardSlot>();
+            
+            if (cardSlot == this)
+            {
+                AddCardToList(valueTuple.Item1);
+                Debug.Log($"{valueTuple.Item1} - {this}");
+            }
         }
 
 
-        private void AddCardToList(Card card, List<CardSlot> addToCardSlotList, List<CardSlot> removeToCardSlotList)
+        private void AddCardToList(Card card)
         {
-            // card listlerine tutan listlere ulaşıyorsun sadece cardların listesine ulaş
+            CardSlot currentCardSlot = card.GetCardSlot();
+
+            if (currentCardSlot)
+            {
+                currentCardSlot.RemoveCardToList(card);
+            }
+            
+            cardList.Add(card);
+            card.SetCardSlot(this);
+        }
+        
+        
+        private void RemoveCardToList(Card card)
+        {
+            cardList.Remove(card);
+            card.SetCardSlot(null);
+        }
+
+
+        private void OnDestroy()
+        {
+            TouchManager.OnUpMouse -= TouchManagerOnUpMouse;
         }
     }
 }

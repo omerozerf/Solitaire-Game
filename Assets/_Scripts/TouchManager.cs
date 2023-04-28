@@ -6,7 +6,7 @@ namespace _Scripts
 {
     public class TouchManager : MonoBehaviour
     {
-        public static event EventHandler<Card> OnUpMouse;
+        public static event EventHandler<(Card, CardSlotStickyObject)> OnUpMouse;
         
         
         private MoveToPosition moveToPosition;
@@ -25,7 +25,7 @@ namespace _Scripts
         private void OnMouseUp()
         {
             stickyObject.MoveToClosestStickyObject();
-            OnUpMouse?.Invoke(this, card);
+            OnUpMouse?.Invoke(this, (card, stickyObject.GetClosestStickyObject()));
         }
 
 
