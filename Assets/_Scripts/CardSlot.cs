@@ -46,14 +46,22 @@ namespace _Scripts
                     for (int j = 0; j < i; j++)
                     {
                         int randomNumber = Random.Range(0, cardList.Count);
-                        Card randomIndex = cardList[randomNumber];
+                        Card randomCard = cardList[randomNumber];
 
                         CardSlot cardSlot = CardSlotManager.Instance.GetCardSlotList(i);
-                        cardSlot.AddCardToList(randomIndex);
+                        cardSlot.AddCardToList(randomCard);
 
-                        cardList.Remove(randomIndex);
+                        cardList.Remove(randomCard);
 
-                        Debug.Log($"{randomIndex} - {cardSlot}");
+                        MoveToPosition moveToPosition = randomCard.GetComponent<MoveToPosition>();
+                        
+                        Vector3 objPos = cardSlot.transform.position;
+                        
+                        moveToPosition.SetTargetPos(objPos);
+                        
+                        randomCard.transform.SetParent(cardSlot.transform);
+                        
+                        Debug.Log($"{randomCard} - {cardSlot}");
                     }
                 }
             }
