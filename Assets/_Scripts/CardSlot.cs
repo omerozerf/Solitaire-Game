@@ -130,8 +130,5 @@ namespace _Scripts
         {
             TouchManager.OnUpMouse -= TouchManagerOnUpMouse;
         }
-        
-        
-        
     }
 }
