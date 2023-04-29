@@ -61,6 +61,8 @@ namespace _Scripts
                         
                         randomCard.transform.SetParent(cardSlot.transform);
                         
+                        // TODO sort
+                        
                         Debug.Log($"{randomCard} - {cardSlot}");
                     }
                 }
