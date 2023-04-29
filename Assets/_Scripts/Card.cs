@@ -41,8 +41,11 @@ namespace _Scripts
             FrontFace.SetActive(false);
             BackFace.SetActive(true);
         }
-        
-        
-        
+
+
+        public GameObject GetFrontFace()
+        {
+            return FrontFace;
+        }
     }
 }

@@ -23,7 +23,12 @@ namespace _Scripts
 
         
         private void Update()
-        { 
+        {
+            TryDealCards();
+        }
+
+        private void TryDealCards()
+        {
             if (!isDealCards)
             {
                 DealCardToList();
@@ -38,20 +43,40 @@ namespace _Scripts
                 isDealCards = true;
 
                 
-                List<Card> cardList = new List<Card>(CardManager.Instance.cardList);
+                List<Card> cardCopyList = new List<Card>(CardManager.Instance.cardList);
 
                 for (int i = 0; i < CardSlotManager.Instance.cardSlotList.Count; i++)
                 {
                     if (i == 0) continue;
                     for (int j = 0; j < i; j++)
                     {
-                        int randomNumber = Random.Range(0, cardList.Count);
-                        Card randomCard = cardList[randomNumber];
+                        int randomNumber = Random.Range(0, cardCopyList.Count);
+                        Card randomCard = cardCopyList[randomNumber];
 
                         CardSlot cardSlot = CardSlotManager.Instance.GetCardSlotList(i);
                         cardSlot.AddCardToList(randomCard);
 
-                        cardList.Remove(randomCard);
+                        SpriteRenderer[] spriteRendererArray =
+                            randomCard.GetFrontFace().GetComponentsInChildren<SpriteRenderer>();
+
+                        Transform frontFaceTransform = randomCard.transform.GetChild(1);
+                        SpriteRenderer frontFaceSpriteRenderer = frontFaceTransform.GetComponent<SpriteRenderer>();
+
+                        SpriteRenderer maskSpriteRenderer = frontFaceTransform.GetChild(0).GetComponent<SpriteRenderer>();
+                        
+                        foreach (SpriteRenderer spriteRenderer in spriteRendererArray)
+                        {
+                            if (spriteRenderer == frontFaceSpriteRenderer || spriteRenderer == maskSpriteRenderer)
+                            {
+                                frontFaceSpriteRenderer.sortingOrder = 0;
+                                maskSpriteRenderer.sortingOrder = 0;
+                                continue;
+                            }
+                            spriteRenderer.sortingOrder = cardList.Count + 1;
+                        }
+                        
+
+                        cardCopyList.Remove(randomCard);
 
                         MoveToPosition moveToPosition = randomCard.GetComponent<MoveToPosition>();
                         
@@ -60,9 +85,7 @@ namespace _Scripts
                         moveToPosition.SetTargetPos(objPos);
                         
                         randomCard.transform.SetParent(cardSlot.transform);
-                        
-                        // TODO sort
-                        
+
                         Debug.Log($"{randomCard} - {cardSlot}");
                     }
                 }
@@ -107,5 +130,8 @@ namespace _Scripts
         {
             TouchManager.OnUpMouse -= TouchManagerOnUpMouse;
         }
+        
+        
+        
     }
 }
