@@ -66,7 +66,8 @@ namespace _Scripts
                         
                         foreach (SpriteRenderer spriteRenderer in spriteRendererArray)
                         {
-                            if (spriteRenderer == frontFaceSpriteRenderer || spriteRenderer == maskSpriteRenderer)
+                            if (spriteRenderer == frontFaceSpriteRenderer ||
+                                spriteRenderer == maskSpriteRenderer)
                             {
                                 frontFaceSpriteRenderer.sortingOrder = 0;
                                 maskSpriteRenderer.sortingOrder = 0;
@@ -85,8 +86,6 @@ namespace _Scripts
                         moveToPosition.SetTargetPos(objPos);
                         
                         randomCard.transform.SetParent(cardSlot.transform);
-
-                        Debug.Log($"{randomCard} - {cardSlot}");
                     }
                 }
             }

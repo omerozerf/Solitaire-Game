@@ -19,6 +19,7 @@ namespace _Scripts
         private void Awake()
         {
             CreateCard();
+            CardManager.Instance.SettAllCardsToMainCardSlot();
         }
 
 

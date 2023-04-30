@@ -39,5 +39,16 @@ namespace _Scripts
 
             return default;
         }
+
+
+        public void SettAllCardsToMainCardSlot()
+        {
+            var mainCardSlot = CardSlotManager.Instance.GetCardSlotList(0);
+
+            foreach (var card in cardList)
+            {
+                mainCardSlot.cardList.Add(card);
+            }
+        }
     }
 }

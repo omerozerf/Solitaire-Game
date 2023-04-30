@@ -61,22 +61,14 @@ namespace _Scripts
 
         public void UpdateVisual()
         {
-            if (cardSlot.cardList != null)
-            {
-                int cardIndex = cardSlot.cardList.IndexOf(this);
+            if (cardSlot.cardList == null) return;
             
-                foreach (SpriteRenderer frontFaceChildren in frontFaceChildrenArray)
-                {
-                    /*
-                    if (frontFaceChildren == )
-                    {
-                        
-                    }
-                    */
-                    frontFaceChildren.sortingOrder = cardIndex + 1;
-                }
+            int cardIndex = cardSlot.cardList.IndexOf(this);
+            
+            foreach (SpriteRenderer frontFaceChildren in frontFaceChildrenArray)
+            {
+                frontFaceChildren.sortingOrder = cardIndex + 1;
             }
-
         }
     }
 }
