@@ -5,9 +5,9 @@ using UnityEngine.Serialization;
 
 namespace _Scripts
 {
-    public class StickyObject : MonoBehaviour
+    public class CardStickyObject : MonoBehaviour
     {
-        private static StickyObject[] stickyObjectArray;
+        private static CardStickyObject[] stickyObjectArray;
         
         [SerializeField] private MoveToPosition moveToPosition;
         [SerializeField] private bool canSnapToCardSlot = true;
@@ -16,7 +16,7 @@ namespace _Scripts
         
         private void Start()
         {
-            if (stickyObjectArray == null) stickyObjectArray = FindObjectsOfType<StickyObject>();
+            if (stickyObjectArray == null) stickyObjectArray = FindObjectsOfType<CardStickyObject>();
         }
 
 
@@ -35,7 +35,7 @@ namespace _Scripts
                     if (distance < currentDistance)
                     {
                         currentDistance = distance;
-
+                        
                         moveToPosition.SetTargetPos(cardSlotStickyObject.transform.position);
                     }
                 }

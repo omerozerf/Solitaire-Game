@@ -10,14 +10,14 @@ namespace _Scripts
         
         
         private MoveToPosition moveToPosition;
-        private StickyObject stickyObject;
+        private CardStickyObject stickyObject;
         public Card card;
 
 
         private void Awake()
         {
             moveToPosition = GetComponent<MoveToPosition>();
-            stickyObject = GetComponentInChildren<StickyObject>();
+            stickyObject = GetComponentInChildren<CardStickyObject>();
             card = GetComponent<Card>();
         }
 

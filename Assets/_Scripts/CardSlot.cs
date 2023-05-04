@@ -18,7 +18,7 @@ namespace _Scripts
 
         private void Start()
         {
-            TouchManager.OnUpMouse += TouchManagerOnUpMouse;
+            TouchManager.OnUpMouse += TouchManager_OnUpMouse;
         }
 
         
@@ -92,7 +92,7 @@ namespace _Scripts
         }
 
 
-        private void TouchManagerOnUpMouse(object sender, (Card, CardSlotStickyObject) valueTuple)
+        private void TouchManager_OnUpMouse(object sender, (Card, CardSlotStickyObject) valueTuple)
         {
             CardSlot cardSlot = valueTuple.Item2.GetComponent<CardSlot>();
             
@@ -128,7 +128,7 @@ namespace _Scripts
 
         private void OnDestroy()
         {
-            TouchManager.OnUpMouse -= TouchManagerOnUpMouse;
+            TouchManager.OnUpMouse -= TouchManager_OnUpMouse;
         }
     }
 }
