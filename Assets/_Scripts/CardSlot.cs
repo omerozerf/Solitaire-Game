@@ -85,10 +85,15 @@ namespace _Scripts
                         
                         moveToPosition.SetTargetPos(objPos);
                         
-                        randomCard.transform.SetParent(cardSlot.transform);
+                        UpdateCardParent(randomCard, cardSlot);
                     }
                 }
             }
+        }
+
+        private static void UpdateCardParent(Card card, CardSlot cardSlot)
+        {
+            card.transform.SetParent(cardSlot.transform);
         }
 
 
@@ -100,6 +105,8 @@ namespace _Scripts
             if (cardSlot == this)
             {
                 AddCardToList(valueTuple.Item1);
+                
+                UpdateCardParent(valueTuple.Item1, cardSlot);
                 valueTuple.Item1.GetCardData();
             }
         }

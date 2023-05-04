@@ -74,7 +74,7 @@ namespace _Scripts
 
         public CardData GetCardData()
         {
-            Debug.Log($"Number: {cardData.number} --- Type: {cardData.cardType}");
+            Debug.Log($"Number: {cardData.number} | Type: {cardData.cardType}");
 
 
             return cardData;
