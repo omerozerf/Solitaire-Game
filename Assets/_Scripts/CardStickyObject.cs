@@ -24,6 +24,16 @@ namespace _Scripts
         }
 
 
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Keypad1))
+            {
+                UpdateCardStickyObject();
+                Debug.Log("Card Stickleri yedim");
+            }
+        }
+
+
         public void MoveToClosestStickyObject()
         {
             if (canSnapToCardSlot)
@@ -78,12 +88,14 @@ namespace _Scripts
         }
 
 
-        private void UpdateCardStickyObject()
+        public void UpdateCardStickyObject()
         {
             if (IsLastCardStickyObject())
             {
-                
+                return;
             }
+            
+            gameObject.SetActive(false);
         }
     }
 }
