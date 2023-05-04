@@ -63,7 +63,7 @@ namespace _Scripts
         {
             if (cardSlot.cardList == null) return;
             
-            int cardIndex = cardSlot.cardList.IndexOf(this);
+            int cardIndex = GetCardIndexOfCardSlot();
             
             foreach (SpriteRenderer frontFaceChildren in frontFaceChildrenArray)
             {
@@ -78,6 +78,12 @@ namespace _Scripts
 
 
             return cardData;
+        }
+
+
+        public int GetCardIndexOfCardSlot()
+        {
+            return cardSlot.cardList.IndexOf(this);
         }
     }
 }

@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 1228487820379098682}
   - component: {fileID: 1682389151045675405}
   m_Layer: 0
-  m_Name: Sticky Object
+  m_Name: Card Sticky Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

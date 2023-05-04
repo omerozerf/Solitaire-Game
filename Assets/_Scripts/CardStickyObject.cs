@@ -7,16 +7,20 @@ namespace _Scripts
 {
     public class CardStickyObject : MonoBehaviour
     {
-        private static CardStickyObject[] stickyObjectArray;
         
         [SerializeField] private MoveToPosition moveToPosition;
         [SerializeField] private bool canSnapToCardSlot = true;
         [SerializeField] private bool canSnapToCard;
         
+        private static CardStickyObject[] cardStickyObjectArray;
+
+        private Card card;
+        
         
         private void Start()
         {
-            if (stickyObjectArray == null) stickyObjectArray = FindObjectsOfType<CardStickyObject>();
+            card = GetComponent<Card>();
+            if (cardStickyObjectArray == null) cardStickyObjectArray = FindObjectsOfType<CardStickyObject>();
         }
 
 
@@ -60,6 +64,26 @@ namespace _Scripts
             }
 
             return currentCardSlotStickyObject;
+        }
+
+
+        private bool IsLastCardStickyObject()
+        {
+            if (card.GetCardSlot().cardList.Count - 1 == card.GetCardIndexOfCardSlot())
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+
+        private void UpdateCardStickyObject()
+        {
+            if (IsLastCardStickyObject())
+            {
+                
+            }
         }
     }
 }
