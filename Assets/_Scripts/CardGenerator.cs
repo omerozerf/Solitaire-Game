@@ -39,7 +39,7 @@ namespace _Scripts
                 if (number == 1 && j != 0) currentTypeInt++;
 
                 Card card = Instantiate(cardPrefab, deckTransform);
-                card.cardData = new CardData(number - 1, currentType);
+                card.cardData = new CardData(number, currentType);
 
                 card.cardDisplay.numberSprite = numberArray[numberSpriteInt % 26];
                 card.cardDisplay.iconSprite = iconSpriteArray[currentTypeInt];

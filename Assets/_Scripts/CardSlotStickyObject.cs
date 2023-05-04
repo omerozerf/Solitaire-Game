@@ -9,8 +9,8 @@ namespace _Scripts
         public static List<CardSlotStickyObject> cardSlotStickyObjectList;
         
         
-        [SerializeField] private bool canSnapToCardSlot = true;
-        [SerializeField] private bool canSnapToCard;
+        // [SerializeField] private bool canSnapToCardSlot = true;
+        // [SerializeField] private bool canSnapToCard;
         
 
         private void Start()

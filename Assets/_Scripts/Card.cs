@@ -70,5 +70,14 @@ namespace _Scripts
                 frontFaceChildren.sortingOrder = cardIndex + 1;
             }
         }
+
+
+        public CardData GetCardData()
+        {
+            Debug.Log($"Number: {cardData.number} --- Type: {cardData.cardType}");
+
+
+            return cardData;
+        }
     }
 }

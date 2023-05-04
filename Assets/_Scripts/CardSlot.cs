@@ -96,10 +96,11 @@ namespace _Scripts
         {
             CardSlot cardSlot = valueTuple.Item2.GetComponent<CardSlot>();
             
+
             if (cardSlot == this)
             {
                 AddCardToList(valueTuple.Item1);
-                Debug.Log($"{valueTuple.Item1} - {this}");
+                valueTuple.Item1.GetCardData();
             }
         }
 
