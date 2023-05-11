@@ -7,7 +7,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static string[] suitArray = new string[]
-        { "Clubs", "Diamonds", "Hearts", "Spades" };
+        { "C", "D", "H", "S" };
     public static string[] valueArray = new string[]
         { "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K" };
 
@@ -64,7 +64,7 @@ public class GameManager : MonoBehaviour
         {
             foreach (string value in valueArray)
             {
-                newDeckList.Add(suit + " - " + value);
+                newDeckList.Add(suit + value);
             }
         }
 
@@ -217,6 +217,7 @@ public class GameManager : MonoBehaviour
                 newTopCard.name = card;
                 tripsOnDisplay.Add(card);
                 newTopCard.GetComponent<Selectable>().faceUp = true;
+                newTopCard.GetComponent<Selectable>().inDeckPile = true;
             }
 
             deckLocation++;

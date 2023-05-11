@@ -54,7 +54,7 @@ public class UpdateSprite : MonoBehaviour
         {
             if (name == userInput.slot1.name)
             {
-                spriteRenderer.color = Color.gray;
+                spriteRenderer.color = Color.white;
             }
             
             else

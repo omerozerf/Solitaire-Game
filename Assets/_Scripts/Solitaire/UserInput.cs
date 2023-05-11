@@ -72,6 +72,11 @@ public class UserInput : MonoBehaviour
         {
             slot1 = selected;
         }
+
+        else if (slot1 != selected)
+        {
+            slot1 = selected;
+        }
      
         print("Card");
     }
@@ -86,5 +91,14 @@ public class UserInput : MonoBehaviour
     void Right()
     {
         print("Right");
+    }
+
+
+    bool Stackable(GameObject selected)
+    {
+        Selectable s1 = slot1.GetComponent<Selectable>();
+        Selectable s2 = selected.GetComponent<Selectable>();
+
+        return false;
     }
 }
