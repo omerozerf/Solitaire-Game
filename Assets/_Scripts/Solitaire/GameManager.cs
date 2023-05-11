@@ -107,6 +107,8 @@ public class GameManager : MonoBehaviour
 
                 newCard.name = card;
 
+                newCard.GetComponent<Selectable>().row = i;
+                
                 if (card == fields[i][fields[i].Count -1])
                 {
                     newCard.GetComponent<Selectable>().faceUp = true;

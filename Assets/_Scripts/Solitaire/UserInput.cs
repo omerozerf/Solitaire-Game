@@ -75,7 +75,15 @@ public class UserInput : MonoBehaviour
 
         else if (slot1 != selected)
         {
-            slot1 = selected;
+            if (Stackable(selected))
+            {
+                
+            }
+
+            else
+            {
+                slot1 = selected;
+            }
         }
      
         print("Card");
@@ -98,6 +106,53 @@ public class UserInput : MonoBehaviour
     {
         Selectable s1 = slot1.GetComponent<Selectable>();
         Selectable s2 = selected.GetComponent<Selectable>();
+
+
+        if (s2.top)
+        {
+            if (s1.suit == s2.suit || (s1.value == 1 && s2.suit == null))
+            {
+                if (s1.value == s2.value +1)
+                {
+                    return true;
+                }
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        else
+        {
+            if (s1.value == s2.value -1)
+            {
+                bool card1Red = true;
+                bool card2Red = true;
+
+                if (s1.suit == "C" || s1.suit == "S")
+                {
+                    card1Red = false;
+                }
+
+                if (s2.suit == "C" || s2.suit == "S")
+                {
+                    card2Red = false;
+                }
+
+                if (card1Red == card2Red)
+                {
+                    print("No stackable");
+                    return false;
+                }
+                
+                else
+                {
+                    print("Stackable");
+                    return true;
+                }
+            }
+        }
 
         return false;
     }
