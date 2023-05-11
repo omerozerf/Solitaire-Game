@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Solitaire : MonoBehaviour
@@ -11,11 +12,27 @@ public class Solitaire : MonoBehaviour
         { "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K" };
 
     public Sprite[] cardFaceArray;
+    public GameObject[] rightPosArray;
+    public GameObject[] fieldPosArray;
+    
     public List<string> deckList;
+    public List<string>[] rights;
+    public List<string>[] fields;
+
     public GameObject cardPrefab;
+
+    private List<string> field0 = new List<string>();
+    private List<string> field1 = new List<string>();
+    private List<string> field2 = new List<string>();
+    private List<string> field3 = new List<string>();
+    private List<string> field4 = new List<string>();
+    private List<string> field5 = new List<string>();
+    private List<string> field6 = new List<string>();
 
     private void Start()
     {
+        fields = new List<string>[] { field0, field1, field2, field3, field4, field5, field6 };
+        
         PlayCards();
     }
 
@@ -24,7 +41,8 @@ public class Solitaire : MonoBehaviour
     {
         deckList = GenerateDeck();
         Shuffle(deckList);
-        SolitaireDeal();
+        SolitaireSort();
+        StartCoroutine(SolitaireDeal());
 
         foreach (string card in deckList)
         {
@@ -65,25 +83,46 @@ public class Solitaire : MonoBehaviour
     }
 
 
-    void SolitaireDeal()
+    IEnumerator SolitaireDeal()
     {
-        float yOffset = 0f;
-        float zOffset = 0.03f;
-        
-        
-        foreach (string card in deckList)
+        for (int i = 0; i < 7; i++)
         {
-            Vector3 position = transform.position;
+            float yOffset = 0f;
+            float zOffset = 0.03f;
+        
+        
+            foreach (string card in fields[i])
+            {
+                yield return new WaitForSeconds(0.01f);
+                
+                Vector3 position = fieldPosArray[i].transform.position;
             
-            GameObject newCard = Instantiate
-                (cardPrefab, new Vector3(position.x, position.y - yOffset, position.z - zOffset), Quaternion.identity);
+                GameObject newCard = Instantiate
+                    (cardPrefab, new Vector3(position.x, position.y - yOffset, position.z - zOffset), Quaternion.identity, fieldPosArray[i].transform);
 
-            newCard.GetComponent<Selectable>().faceUp = true;
+                if (card == fields[i][fields[i].Count -1])
+                {
+                    newCard.GetComponent<Selectable>().faceUp = true;
+                }
+                
+                yOffset = yOffset + 0.3f;
+                zOffset = zOffset + 0.03f;
             
-            yOffset = yOffset + 0.3f;
-            zOffset = zOffset + 0.03f;
-            
-            newCard.name = card;
+                newCard.name = card;
+            }
+        }
+    }
+
+
+    void SolitaireSort()
+    {
+        for (int i = 0; i < 7; i++)
+        {
+            for (int j = i; j < 7; j++)
+            {
+                fields[j].Add(deckList.Last<string>());
+                deckList.RemoveAt(deckList.Count - 1);
+            }
         }
     }
 }

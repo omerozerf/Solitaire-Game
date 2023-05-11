@@ -21,7 +21,7 @@ public class UpdateSprite : MonoBehaviour
         int i = 0;
         foreach (string card in deckList)
         {
-            if (this.name == card)
+            if (name == card)
             {
                 cardFace = solitaire.cardFaceArray[i];
                 break;
