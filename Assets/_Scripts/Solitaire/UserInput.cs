@@ -5,12 +5,15 @@ using UnityEngine;
 
 public class UserInput : MonoBehaviour
 {
+    public GameObject slot1;
+    
     private GameManager solitaire;
 
 
     private void Start()
     {
         solitaire = FindObjectOfType<GameManager>();
+        slot1 = gameObject;
     }
 
 
@@ -38,7 +41,7 @@ public class UserInput : MonoBehaviour
                 
                 else if (hit.collider.CompareTag("Card"))
                 {
-                    Card();
+                    Card(hit.collider.gameObject);
                 }
                 
                 else if (hit.collider.CompareTag("Field"))
@@ -57,13 +60,19 @@ public class UserInput : MonoBehaviour
 
     void Deck()
     {
-        print("Deck");
         solitaire.DealFromDeck();
+
+        print("Deck");
     }
     
     
-    void Card()
+    void Card(GameObject selected)
     {
+        if (slot1 = gameObject)
+        {
+            slot1 = selected;
+        }
+     
         print("Card");
     }
     
