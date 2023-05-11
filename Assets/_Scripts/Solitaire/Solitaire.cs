@@ -73,13 +73,14 @@ public class Solitaire : MonoBehaviour
         
         foreach (string card in deckList)
         {
-            Vector3 rotation = new Vector3(0, 0, 270);
             Vector3 position = transform.position;
             
             GameObject newCard = Instantiate
-                (cardPrefab, new Vector3(position.x, position.y - yOffset, position.z - zOffset), Quaternion.Euler(rotation));
+                (cardPrefab, new Vector3(position.x, position.y - yOffset, position.z - zOffset), Quaternion.identity);
 
-            yOffset = yOffset + 0.1f;
+            newCard.GetComponent<Selectable>().faceUp = true;
+            
+            yOffset = yOffset + 0.3f;
             zOffset = zOffset + 0.03f;
             
             newCard.name = card;
