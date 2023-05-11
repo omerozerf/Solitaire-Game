@@ -50,12 +50,6 @@ public class Solitaire : MonoBehaviour
     {
         deckList = GenerateDeck();
         Shuffle(deckList);
-        
-        foreach (string card in deckList)
-        {
-            print(card);
-        }
-        
         SolitaireSort();
         StartCoroutine(SolitaireDeal());
         SortDeckIntoTrips();
