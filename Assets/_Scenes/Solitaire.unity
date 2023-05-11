@@ -590,7 +590,7 @@ GameObject:
   - component: {fileID: 447177205}
   - component: {fileID: 447177204}
   m_Layer: 0
-  m_Name: Solitaire Game
+  m_Name: Game Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

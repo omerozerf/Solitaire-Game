@@ -10,13 +10,13 @@ public class UpdateSprite : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
     private Selectable selectable;
-    private Solitaire solitaire;
+    private GameManager solitaire;
 
 
     private void Start()
     {
-        List<string> deckList = Solitaire.GenerateDeck();
-        solitaire = FindObjectOfType<Solitaire>();
+        List<string> deckList = GameManager.GenerateDeck();
+        solitaire = FindObjectOfType<GameManager>();
 
         int i = 0;
         foreach (string card in deckList)

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class Solitaire : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     public static string[] suitArray = new string[]
         { "Clubs", "Diamonds", "Hearts", "Spades" };

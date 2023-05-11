@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class UserInput : MonoBehaviour
 {
-    private Solitaire solitaire;
+    private GameManager solitaire;
 
 
     private void Start()
     {
-        solitaire = FindObjectOfType<Solitaire>();
+        solitaire = FindObjectOfType<GameManager>();
     }
 
 
