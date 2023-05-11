@@ -207,7 +207,7 @@ public class Solitaire : MonoBehaviour
             
             tripsOnDisplay.Clear();
             
-            float xOffset = 2.5f;
+            float yOffset = -3.5f;
             float zOffset = -0.2f;
 
             foreach (string card in deckTrips[deckLocation])
@@ -215,9 +215,9 @@ public class Solitaire : MonoBehaviour
                 Vector3 position = deckButton.transform.position;
 
                 GameObject newTopCard = Instantiate
-                    (cardPrefab, new Vector3(position.x + xOffset, position.y, position.z + zOffset), Quaternion.identity, deckButton.transform);
+                    (cardPrefab, new Vector3(position.x, position.y + yOffset, position.z + zOffset), Quaternion.identity, deckButton.transform);
 
-                xOffset = xOffset + 0.5f;
+                yOffset = yOffset - 0.5f;
                 zOffset = zOffset - 0.2f;
                 
                 newTopCard.name = card;
