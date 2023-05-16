@@ -2373,7 +2373,7 @@ GameObject:
   - component: {fileID: 1172259710}
   - component: {fileID: 1172259713}
   m_Layer: 0
-  m_Name: SolitaireGame
+  m_Name: Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2524,7 +2524,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1198706965}
   m_Layer: 0
-  m_Name: Top
+  m_Name: Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3783,7 +3783,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1781964869}
   m_Layer: 0
-  m_Name: Bottom
+  m_Name: Slots
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
