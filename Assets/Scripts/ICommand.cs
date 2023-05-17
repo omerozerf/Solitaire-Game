@@ -2,9 +2,8 @@
 {
     public interface ICommand
     {
-        bool Execute();
+        void Execute();
         
-        bool Undo();
-        
+        void Undo();
     }
 }

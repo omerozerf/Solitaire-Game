@@ -3,10 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using _Scripts.Solitaire;
 using TMPro;
 
 public class Solitaire : MonoBehaviour
 {
+    [SerializeField] private CommandHistory commandHistory;
+    
+    
     public Sprite[] cardFaces;
     public GameObject cardPrefab;
     public GameObject deckButton;
@@ -192,49 +196,15 @@ public class Solitaire : MonoBehaviour
 
     }
 
-    public void DealFromDeck()
+    public void DrawFromDeck()
     {
-        // add remaining cards to discard pile
-
-        foreach (Transform child in deckButton.transform)
-        {
-            if (child.CompareTag("Card"))
-            {
-                deck.Remove(child.name);
-                discardPile.Add(child.name);
-                Destroy(child.gameObject);
-            }
-        }
-
-
-        if (deckLocation < trips)
-        {
-            // draw 3 new cards
-            tripsOnDisplay.Clear();
-            float yOffset = -3.5f;
-            float zOffset = -0.2f;
-
-            foreach (string card in deckTrips[deckLocation])
-            {
-                GameObject newTopCard = Instantiate(cardPrefab, new Vector3(deckButton.transform.position.x, deckButton.transform.position.y + yOffset, deckButton.transform.position.z + zOffset), Quaternion.identity, deckButton.transform);
-                yOffset = yOffset - 0.5f;
-                zOffset = zOffset - 0.2f;
-                newTopCard.name = card;
-                tripsOnDisplay.Add(card);
-                newTopCard.GetComponent<Selectable>().faceUp = true;
-                newTopCard.GetComponent<Selectable>().inDeckPile = true;
-            }
-            deckLocation++;
-
-        }
-        else
-        {
-            //Restack the top deck
-            RestackTopDeck();
-        }
+        DrawCardCommand drawCardCommand = 
+            new DrawCardCommand(this, deck, deckButton, discardPile, deckLocation, trips, tripsOnDisplay, deckTrips, cardPrefab);
+        drawCardCommand.Execute();
+        commandHistory.AddCommand(drawCardCommand);
     }
 
-    void RestackTopDeck()
+    public void RestackTopDeck()
     {
         deck.Clear();
         foreach (string card in discardPile)
