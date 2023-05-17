@@ -23,7 +23,6 @@ public class ScoreKeeper : MonoBehaviour
     }
 
     public bool HasWon()
-
     {
         int i = 0;
         foreach (Selectable topstack in topStacks)

@@ -3,18 +3,29 @@ using UnityEngine;
 
 namespace _Scripts.Solitaire
 {
-    public class MoveHistory : MonoBehaviour
+    public class MoveHistory : MonoBehaviour, ICommand
+
     {
-        private Stack<UndoData> undoDataStack = new Stack<UndoData>();
+    private Stack<ICommand> ICommandStack = new Stack<ICommand>();
 
 
-        public void UndoMove()
+    public void UndoMove()
+    {
+        if (ICommandStack.Count > 0)
         {
-            if (undoDataStack.Count > 0)
-            {
-                UndoData undoData = undoDataStack.Pop();
-                
-            }
+            ICommand Icommand = ICommandStack.Pop();
+
         }
+    }
+
+    public void Execute()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void Undo()
+    {
+        throw new System.NotImplementedException();
+    }
     }
 }
