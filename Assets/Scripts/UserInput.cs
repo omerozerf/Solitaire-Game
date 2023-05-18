@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using _Scripts;
 using _Scripts.Solitaire;
 using TMPro;
 using UnityEngine.Serialization;
@@ -252,9 +253,11 @@ public class UserInput : MonoBehaviour
     {
         Selectable s1 = slot1.GetComponent<Selectable>();
         Selectable s2 = selected.GetComponent<Selectable>();
+
+        MoveToPosition moveToPosition = slot1.GetComponent<MoveToPosition>();
         
         StackCardCommand stackCardCommand = 
-            new StackCardCommand(slot1, solitaire, this.gameObject, selected, s1, s2);
+            new StackCardCommand(slot1, solitaire, this.gameObject, selected, s1, s2, moveToPosition);
         stackCardCommand.Execute();
         commandHistory.AddCommand(stackCardCommand);
     }

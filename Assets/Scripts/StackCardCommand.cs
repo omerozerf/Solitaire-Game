@@ -11,6 +11,7 @@ namespace _Scripts.Solitaire
         private GameObject selected;
         private Selectable s1;
         private Selectable s2;
+        private MoveToPosition moveToPosition;
 
         private GameObject previousSlot1;
         private Vector3 previousPosition;
@@ -20,7 +21,7 @@ namespace _Scripts.Solitaire
         private bool previousTop;
         private bool previousS2Top;
 
-        public StackCardCommand(GameObject slot1, global::Solitaire solitaire, GameObject myGameObject, GameObject selected, Selectable s1, Selectable s2)
+        public StackCardCommand(GameObject slot1, global::Solitaire solitaire, GameObject myGameObject, GameObject selected, Selectable s1, Selectable s2, MoveToPosition moveToPosition)
         {
             this.slot1 = slot1;
             this.solitaire = solitaire;
@@ -28,6 +29,7 @@ namespace _Scripts.Solitaire
             this.selected = selected;
             this.s1 = s1;
             this.s2 = s2;
+            this.moveToPosition = moveToPosition;
         }
 
         public void Execute()
@@ -44,6 +46,8 @@ namespace _Scripts.Solitaire
 
             var position = selected.transform.position;
             slot1.transform.position = new Vector3(position.x, position.y - yOffset, position.z - 0.01f);
+            // moveToPosition.SetTargetPos(new Vector3(position.x, position.y - yOffset, position.z - 0.01f));
+            
             slot1.transform.parent = selected.transform; 
             if (s1.inDeckPile) 
             {
