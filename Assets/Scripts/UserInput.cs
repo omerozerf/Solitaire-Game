@@ -1,12 +1,17 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using _Scripts.Solitaire;
 using TMPro;
 using UnityEngine.Serialization;
 
 public class UserInput : MonoBehaviour
 {
+    public static UserInput Instance;
+    
+    
     public GameObject slot1;
     public int move;
     public int score;
@@ -17,7 +22,13 @@ public class UserInput : MonoBehaviour
 
     [FormerlySerializedAs("textMeshProUGUI")] [SerializeField] private TextMeshProUGUI moveTextMeshProUGUI;
     [SerializeField] private TextMeshProUGUI scoreTextMeshProUGUI;
-    
+    [SerializeField] private CommandHistory commandHistory;
+
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
 
     void Start()
@@ -137,7 +148,7 @@ public class UserInput : MonoBehaviour
                 // kart ekleme
                 if (Stackable(selected))
                 {
-                    Stack(selected);
+                    StackCard(selected);
                     move++;
                     score = 5 * move;
                 }
@@ -165,7 +176,7 @@ public class UserInput : MonoBehaviour
         {
             if (slot1.GetComponent<Selectable>().value == 1)
             {
-                Stack(selected);
+                StackCard(selected);
             }
 
         }
@@ -178,7 +189,7 @@ public class UserInput : MonoBehaviour
         {
             if (slot1.GetComponent<Selectable>().value == 13)
             {
-                Stack(selected);
+                StackCard(selected);
             }
         }
     }
@@ -237,55 +248,15 @@ public class UserInput : MonoBehaviour
         return false;
     }
 
-    void Stack(GameObject selected)
+    void StackCard(GameObject selected)
     {
         Selectable s1 = slot1.GetComponent<Selectable>();
         Selectable s2 = selected.GetComponent<Selectable>();
-        float yOffset = 0.3f;
-
-        if (s2.top || (!s2.top && s1.value == 13))
-        {
-            yOffset = 0;
-        }
-
-        slot1.transform.position = new Vector3(selected.transform.position.x, selected.transform.position.y - yOffset, selected.transform.position.z - 0.01f);
-        slot1.transform.parent = selected.transform; 
-
-        if (s1.inDeckPile) 
-        {
-            solitaire.tripsOnDisplay.Remove(slot1.name);
-        }
-        else if (s1.top && s2.top && s1.value == 1)
-        {
-            solitaire.topPos[s1.row].GetComponent<Selectable>().value = 0;
-            solitaire.topPos[s1.row].GetComponent<Selectable>().suit = null;
-        }
-        else if (s1.top)
-        {
-            solitaire.topPos[s1.row].GetComponent<Selectable>().value = s1.value - 1;
-        }
-        else 
-        {
-            solitaire.bottoms[s1.row].Remove(slot1.name);
-        }
-
-        s1.inDeckPile = false;
-        s1.row = s2.row;
-
-        if (s2.top) 
-        {
-            solitaire.topPos[s1.row].GetComponent<Selectable>().value = s1.value;
-            solitaire.topPos[s1.row].GetComponent<Selectable>().suit = s1.suit;
-            s1.top = true;
-        }
-        else
-        {
-            s1.top = false;
-        }
-
         
-        slot1 = this.gameObject;
-
+        StackCardCommand stackCardCommand = 
+            new StackCardCommand(slot1, solitaire, this.gameObject, selected, s1, s2);
+        stackCardCommand.Execute();
+        commandHistory.AddCommand(stackCardCommand);
     }
 
     bool Blocked(GameObject selected)
@@ -339,7 +310,7 @@ public class UserInput : MonoBehaviour
                 if (solitaire.topPos[i].GetComponent<Selectable>().value == 0) 
                 {
                     slot1 = selected;
-                    Stack(stack.gameObject);
+                    StackCard(stack.gameObject);
                     break;
                 }
             }
@@ -369,7 +340,7 @@ public class UserInput : MonoBehaviour
                             lastCardname = stack.suit + "K";
                         }
                         GameObject lastCard = GameObject.Find(lastCardname);
-                        Stack(lastCard);
+                        StackCard(lastCard);
                         break;
                     }
                 }

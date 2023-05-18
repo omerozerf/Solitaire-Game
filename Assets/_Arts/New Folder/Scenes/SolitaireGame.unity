@@ -2616,6 +2616,7 @@ MonoBehaviour:
   score: 0
   moveTextMeshProUGUI: {fileID: 12159681}
   scoreTextMeshProUGUI: {fileID: 947343832}
+  commandHistory: {fileID: 1877089741}
 --- !u!114 &1172259711
 MonoBehaviour:
   m_ObjectHideFlags: 0
