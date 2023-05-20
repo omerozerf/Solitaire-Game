@@ -71,14 +71,11 @@ public class Solitaire : MonoBehaviour
             list.Clear();
         }
 
+        
         deck = GenerateDeck();
+        
+        
         Shuffle(deck);
-
-        //test the cards in the deck:
-        foreach (string card in deck)
-        {
-            print(card);
-        }
         SolitaireSort();
         StartCoroutine(SolitaireDeal());
         SortDeckIntoTrips();
