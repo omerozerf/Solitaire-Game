@@ -113,7 +113,7 @@ namespace _Scripts.Solitaire
             s2.top = previousS2Top;
 
             // Diğer gerekli geri yükleme işlemlerini yap
-
+ 
             // ...
         }
 
