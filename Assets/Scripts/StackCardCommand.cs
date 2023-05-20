@@ -45,8 +45,8 @@ namespace _Scripts.Solitaire
             previousParent = UserInput.Instance.slot1.transform.parent;
 
             var position = selected.transform.position;
-            slot1.transform.position = new Vector3(position.x, position.y - yOffset, position.z - 0.01f);
-            // moveToPosition.SetTargetPos(new Vector3(position.x, position.y - yOffset, position.z - 0.01f));
+            // slot1.transform.position = new Vector3(position.x, position.y - yOffset, position.z - 0.01f);
+            moveToPosition.SetTargetPos(new Vector3(position.x, position.y - yOffset, position.z - 0.01f));
             
             slot1.transform.parent = selected.transform; 
             if (s1.inDeckPile) 
