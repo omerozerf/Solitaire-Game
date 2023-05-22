@@ -101,7 +101,7 @@ namespace _Scripts.Solitaire
             // yOffset = previousYOffset;
 
             // slot1'in transformunu geri yükle
-            slot1.transform.position = previousPosition;
+            moveToPosition.SetTargetPos(previousPosition);
             slot1.transform.parent = previousParent;
 
             // s1'in değerlerini geri yükle
@@ -113,8 +113,9 @@ namespace _Scripts.Solitaire
             s2.top = previousS2Top;
 
             // Diğer gerekli geri yükleme işlemlerini yap
- 
-            // ...
+
+            UserInput.Instance.move--;
+            UserInput.Instance.score = UserInput.Instance.score - 5;
         }
 
 
